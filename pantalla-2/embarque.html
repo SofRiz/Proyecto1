@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <a href="../index.html">
+                <img
+                    src="../assets/InterfazHome/HeaderWebUniversae.png"
+                    alt=""
+                    class="logo"
+                />
+            </a>
+        </header>
+        <div class="container-game">
+            <div class="game">
+                <iframe
+                    class="juego"
+                    scrolling="no"
+                    allowfullscreen=""
+                    frameborder=""
+                    height="700"
+                    width="800"
+                    src="https://html-classic.itch.zone/html/8561483/index.html"
+                ></iframe>
+            </div>
+            <section class="info-section">
+                <div class="info">
+                    <h2>
+                        Mantenimiento de los equipos y herramientas de extinción
+                        de incendios forestales.
+                    </h2>
+                    <h3>Descripcion:</h3>
+                    <p>
+                        En un campo de prácticas sumido en el desorden y la
+                        confusión tienes que encontrar tienes que encontrar y
+                        colocar las partes de los EPIs utilizados en la
+                        extinción de incendios forestales.
+                    </p>
+                    <h3>Grado, asignatura y unidad:</h3>
+                    <p>Coordinación de emergencias y protección civil.</p>
+                    <p>Gestión de recursos de emergencias y protección civil</p>
+                    <p>
+                        Planificación y supervisión del mantenimiento de
+                        equipos, medios técnicos e instalaciones.
+                    </p>
+                    <h3>Duracion aproximada:</h3>
+                    <p>10 minutos</p>
+                    <h3>Nivel de dificultad:</h3>
+                    <p>Facil</p>
+                </div>
+                <figure class="images">
+                    <img
+                        src="../assets/InterfazGame/Miniaturas/Embarque/Embarque0.png"
+                        alt=""
+                        onclick="openModal();currentSlide(1)"
+                    />
+                    <img
+                        src="../assets/InterfazGame/Miniaturas/Embarque/Embarque1.png"
+                        alt=""
+                        onclick="openModal();currentSlide(2)"
+                    />
+                    <img
+                        src="../assets/InterfazGame/Miniaturas/Embarque/Embarque2.png"
+                        alt=""
+                        onclick="openModal();currentSlide(3)"
+                    />
+                    <img
+                        src="../assets/InterfazGame/Miniaturas/Embarque/Embarque3.png"
+                        alt=""
+                        onclick="openModal();currentSlide(4)"
+                    />
+                    <img
+                        src="../assets/InterfazGame/Miniaturas/Embarque/Embarque4.png"
+                        alt=""
+                        onclick="openModal();currentSlide(5)"
+                    />
+                </figure>
+            </section>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="backimg-1">
+                        <img
+                            src="../assets/InterfazGame/Cuadrado fondo enfocado.png"
+                        />
+                    </div>
+                    <div class="backimg-2">
+                        <img
+                            src="../assets/InterfazGame/Cuadrado fondo enfocado.png"
+                        />
+                    </div>
+                    <div class="mySlides">
+                        <img
+                            src="../assets/InterfazGame/Miniaturas/Embarque/Embarque0.png"
+                        />
+                    </div>
+                    <div class="mySlides">
+                        <img
+                            src="../assets/InterfazGame/Miniaturas/Embarque/Embarque1.png"
+                        />
+                    </div>
+
+                    <div class="mySlides">
+                        <img
+                            src="../assets/InterfazGame/Miniaturas/Embarque/Embarque2.png"
+                        />
+                    </div>
+
+                    <div class="mySlides">
+                        <img
+                            src="../assets/InterfazGame/Miniaturas/Embarque/Embarque3.png"
+                        />
+                    </div>
+                    <div class="mySlides">
+                        <img
+                            src="../assets/InterfazGame/Miniaturas/Embarque/Embarque4.png"
+                        />
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)"
+                        ><img src="../assets/InterfazGame/Flecha izquierda.png"
+                    /></a>
+                    <a class="next" onclick="plusSlides(1)"
+                        ><img src="../assets/InterfazGame/Flecha derecha.png"
+                    /></a>
+
+                    <div id="slideDots" class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="iconos">
+                <a href="https://www.facebook.com/UNIVERSAE/"
+                    ><i class="fa fa-facebook-square"></i
+                ></a>
+                <a href="https://www.instagram.com/_universae/?hl=es"
+                    ><i class="fa fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/c/UNIVERSAE_FP"
+                    ><i class="fa fa-youtube-play"></i
+                ></a>
+                <a href="https://www.twitch.tv/universae_fp"
+                    ><i class="fa fa-twitch"></i
+                ></a>
+                <a href="https://www.linkedin.com/school/universae"
+                    ><i class="fa fa-linkedin-square"></i
+                ></a>
+                <a href="https://twitter.com/_Universae"
+                    ><i class="fa fa-twitter"></i
+                ></a>
+                <a href="https://universae.com"><i class="fa fa-google"></i></a>
+            </div>
+        </footer>
+        <!-- Javascript modal -->
+        <script src="./modal.js"></script>
+    </body>
+</html>
